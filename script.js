@@ -1,8 +1,3 @@
-// function toggle() {
-//   var bg = document.querySelector("section");
-//   bg.classList.toggle("active");
-// }
-
 const tl = gsap.timeline({
   defaults: {
     ease: "power2.out",
@@ -33,6 +28,19 @@ tl.to(
 );
 tl.fromTo(
   ".p",
+  {
+    y: "100%",
+    opacity: 0,
+  },
+  {
+    duration: 1.5,
+    y: "0%",
+    opacity: 1,
+  },
+  "-=1"
+);
+tl.fromTo(
+  ".p-freelance",
   {
     y: "100%",
     opacity: 0,

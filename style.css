@@ -37,6 +37,10 @@ body.dark-theme {
 .dark-theme .p {
   color: var(--body-color);
 }
+.dark-theme .p-freelance {
+  color: var(--body-color);
+}
+
 .dark-theme .social a {
   color: var(--body-color);
 }
@@ -108,7 +112,7 @@ header ul li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 60vh;
+  height: 62vh;
   width: 300px;
   background: url(hero.jpg) no-repeat 50% 50%;
   background-size: cover;
@@ -135,6 +139,15 @@ header ul li a:hover {
   background: rgba(228, 228, 228, 0.561);
   padding: 10px;
   color: white;
+}
+.container .p-freelance {
+  position: relative;
+  bottom: -100px;
+  left: 0px;
+  text-align: center;
+  background: none;
+  width: 100%;
+  font-size: 16px;
 }
 .container h1 {
   font-family: "Great Vibes";
@@ -209,6 +222,14 @@ section a {
   }
 }
 @media (max-width: 570px) {
+  .logo {
+    margin-top: 25px;
+  }
+  .logo a img {
+    padding: 5px;
+    width: 70px;
+    height: 70px;
+  }
   .container h1 {
     font-size: 50px;
   }
@@ -236,5 +257,10 @@ section a {
 @media screen and (max-width: 365px) {
   .container p {
     width: 71%;
+  }
+  .container .p-freelance {
+    font-size: 12px;
+    bottom: -75px;
+    left: 0px;
   }
 }
