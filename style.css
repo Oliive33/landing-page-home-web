@@ -266,7 +266,8 @@ section a {
 }
 @media screen and (max-width: 365px) {
   .container p {
-    width: 71%;
+    width: 73%;
+    line-height: 1.4;
   }
   .container .p-freelance {
     font-size: 12px;
